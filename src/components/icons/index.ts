@@ -1,6 +1,6 @@
 export { AIIcon } from "./AI";
 export { ChatIcon } from "./Chat";
-export { DashboardIcon } from "./DashBoard";
+export { DashboardIcon } from "./Dashboard";
 export { DocsIcon } from "./Docs";
 export { LogoIcon } from "./Logo";
 export { ProjectIcon } from "./Project";
