@@ -8,6 +8,12 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -15,7 +21,17 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      grey: {
+        0: "#292D34",
+        3: "#E9EBF0",
+      },
+      white: "#FFFFFF",
+    },
     extend: {
+      fontFamily: {
+        sans: ["Axiforma"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -65,10 +81,20 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "collapsible-left": {
+          from: { width: 0 },
+          to: { width: "var(--radix-collapsible-content-width)" },
+        },
+        "collapsible-right": {
+          from: { width: "var(--radix-collapsible-content-width)" },
+          to: { width: 0 },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "collapsible-left": "collapsible-left 0.2s ease-out",
+        "collapsible-right": "collapsible-right 0.2s ease-out",
       },
     },
   },
