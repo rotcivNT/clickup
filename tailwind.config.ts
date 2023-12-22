@@ -72,6 +72,9 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        "tab-nav-active": "linear-gradient(130deg, #24223e, #282642)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
