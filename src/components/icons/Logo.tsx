@@ -18,7 +18,7 @@ export const LogoIcon = () => (
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#8930FD" />
-        <stop offset="1" stop-color="#49CCF9" />
+        <stop offset="1" stopColor="#49CCF9" />
       </linearGradient>
       <linearGradient
         id="top-152"
@@ -28,8 +28,8 @@ export const LogoIcon = () => (
         y2="13.0864"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF02F0" />
-        <stop offset="1" stop-color="#FFC800" />
+        <stop stopColor="#FF02F0" />
+        <stop offset="1" stopColor="#FFC800" />
       </linearGradient>
     </defs>
     <path
