@@ -93,6 +93,10 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+
+  .bg-primary-linear {
+    background-image: linear-gradient(80deg,#45c4f9 14.49%,rgba(137,32,254,.81) 48.2%,#ff0be5 94.81%)
+  }
 }
  
 @layer base {
