@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Header from "@/components/header/Header";
+import React from "react";
 
-export default function Home() {
-  return <main>HOWWW s</main>;
+export default function HomePage() {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
