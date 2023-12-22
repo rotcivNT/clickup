@@ -1,2 +1,11 @@
+export { AIIcon } from "./AI";
+export { ChatIcon } from "./Chat";
+export { DashboardIcon } from "./Dashboard";
+export { DocsIcon } from "./Docs";
 export { LogoIcon } from "./Logo";
+export { ProjectIcon } from "./Project";
 export { ReviewLogoIcon } from "./ReviewLogo";
+export { SprintIcon } from "./Sprints";
+export { TimeTrackingIcon } from "./TimeTracking";
+export { WhiteBoardIcon } from "./WhiteBoard";
+export { FormIcon } from "./Form";
