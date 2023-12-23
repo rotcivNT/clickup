@@ -89,6 +89,7 @@ function HomeTab() {
           {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
           {tabs.map((tab: any, index: number) => (
             <TabsTrigger
+              key={tab.title}
               onClick={() => setTranslateX(-172.5 + index * 115)}
               className={cn(
                 "flex flex-col gap-5 w-[115px] shrink-0 leading-normal relative",
@@ -112,7 +113,7 @@ function HomeTab() {
         </TabsList>
         {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
         {tabs.map((tab: any) => (
-          <TabsContent value={tab.title}>
+          <TabsContent key={tab.title} value={tab.title}>
             <Image
               alt={tab.title}
               src={tab.img}
