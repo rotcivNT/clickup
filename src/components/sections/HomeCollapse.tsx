@@ -47,7 +47,10 @@ function HomeCollapse() {
       {/* Mobile Collapse */}
       <div className={cn("flex overflow-scroll snap-x snap-mandatory pl-5 gap-5", "lg:hidden")}>
         {data.map((item) => (
-          <Card className="w-[280px] shrink-0 snap-start scroll-mx-5 bg-home-collapse rounded-xl">
+          <Card
+            key={item.title}
+            className="w-[280px] shrink-0 snap-start scroll-mx-5 bg-home-collapse rounded-xl"
+          >
             <CardHeader className="pb-3">
               <CardTitle className="leading-[30px] font-extrabold text-white">
                 {item.title}
@@ -60,14 +63,16 @@ function HomeCollapse() {
             </CardContent>
             <CardFooter className="flex-wrap gap-2">
               {item.badge.map((badge) => (
-                <Badge variant="secondary">{badge}</Badge>
+                <Badge key={badge} variant="secondary">
+                  {badge}
+                </Badge>
               ))}
             </CardFooter>
           </Card>
         ))}
       </div>
       {/* Desktop + Table Collapse */}
-      <div className={cn("hidden lg:flex gap-[100px] mt-[60px] max-w-full")}>
+      <div className={cn("hidden lg:flex gap-[100px] mt-[60px] max-w-full min-h-[700px]")}>
         <Card className="w-[280px] rounded-xl flex-1 border-none">
           <CardHeader className="pb-3">
             <CardTitle className="bg-primary-linear bg-clip-text text-[transparent] font-[900] text-[40px] leading-[50px]">
