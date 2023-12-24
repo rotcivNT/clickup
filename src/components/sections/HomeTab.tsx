@@ -1,5 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { shimmer, toBase64 } from "@/utils/shimmer";
+import Image from "next/image";
 import {
   AIIcon,
   ChatIcon,
@@ -13,9 +15,6 @@ import {
 } from "../icons";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import "./styles.scss";
-import { useState } from "react";
-import Image from "next/image";
-import { shimmer, toBase64 } from "@/utils/shimmer";
 
 const tabs = [
   {
@@ -69,28 +68,19 @@ const tabs = [
   },
 ];
 function HomeTab() {
-  const [translateX, setTranslateX] = useState(-172.5);
   return (
-    <div
-      className={cn(
-        "relative mx-5 pt-[70px] overflow-hidden",
-        "before:absolute before:z-10 before:top-[70px] before:w-[90px] before:h-[100px] before:bg-contain before:pointer-events-none before:bg-[url('/static/images/tab-nav-fade.svg')]",
-        "after:absolute after:right-0 after:rotate-180 after:z-10 after:top-[70px] after:w-[90px] after:h-[100px] after:bg-contain after:pointer-events-none after:bg-[url('/static/images/tab-nav-fade.svg')]",
-      )}
-    >
-      <Tabs
-        defaultValue="Projects"
-        className="w-full mx-auto flex justify-center flex-col overflow-hidden"
-      >
+    <div className={cn("relative mx-5 pt-[70px]")}>
+      <Tabs defaultValue="Projects" className="w-full mx-auto flex justify-center flex-col">
         <TabsList
-          style={{ transform: `translateX(${-translateX}px)` }}
-          className="relative transition duration-500 bg-[transparent] items-stretch h-auto pb-5 justify-start"
+          className={cn(
+            "relative transition duration-500 bg-[transparent] items-stretch h-auto pb-5 overflow-x-auto",
+            "justify-start xl:justify-center",
+          )}
         >
           {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
-          {tabs.map((tab: any, index: number) => (
+          {tabs.map((tab: any) => (
             <TabsTrigger
               key={tab.title}
-              onClick={() => setTranslateX(-172.5 + index * 115)}
               className={cn(
                 "flex flex-col gap-5 w-[115px] shrink-0 leading-normal relative",
                 "data-[state=active]:text-[#24223e] data-[state=active]:font-extrabold",

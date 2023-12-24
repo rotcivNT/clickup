@@ -13,7 +13,7 @@ export default function MobileNavbarWrapper() {
       <div
         onClick={() => setIsOpen(false)}
         className={cn(
-          "fixed top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.6)] transition-all duration-500",
+          "fixed top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.6)] z-30 transition-all duration-500",
           isOpen ? "visible opacity-100" : "invisible opacity-0",
         )}
       />

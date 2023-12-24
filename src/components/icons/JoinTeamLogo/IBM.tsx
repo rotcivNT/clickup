@@ -1,6 +1,6 @@
 export const IBMLogo = () => (
   <svg width="64" height="26" viewBox="0 0 64 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_138_41663)">
+    <g clipPath="url(#clip0_138_41663)">
       <path d="M0.935059 24.1877H13.0523V25.9223H0.935059V24.1877Z" fill="#1F70C1" />
       <path d="M0.935059 20.8606H13.0523V22.6013H0.935059V20.8606Z" fill="#1F70C1" />
       <path d="M4.39209 17.5396H9.5896V19.2803H4.39209V17.5396Z" fill="#1F70C1" />
