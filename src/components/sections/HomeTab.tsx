@@ -69,15 +69,16 @@ const tabs = [
 ];
 function HomeTab() {
   return (
-    <div className={cn("relative mx-5 pt-[70px] overflow-hidden")}>
+    <div className={cn("relative mx-5 pt-[70px]")}>
       <Tabs defaultValue="Projects" className="w-full mx-auto flex justify-center flex-col">
         <TabsList
           className={cn(
-            "relative transition duration-500 bg-[transparent] items-stretch h-auto pb-5 mx-auto overflow-scroll",
+            "relative transition duration-500 bg-[transparent] items-stretch h-auto pb-5 overflow-x-auto",
+            "justify-start xl:justify-center",
           )}
         >
           {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
-          {tabs.map((tab: any, index: number) => (
+          {tabs.map((tab: any) => (
             <TabsTrigger
               key={tab.title}
               className={cn(
