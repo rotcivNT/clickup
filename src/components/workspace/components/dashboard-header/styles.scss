@@ -1,0 +1,18 @@
+.btn-ai {
+    &:hover::before {
+        @apply opacity-50 translate-y-0
+    }
+    &::before {
+        transition: opacity .2s cubic-bezier(.785,.135,.15,.86) 0s;
+        background-image: radial-gradient(49.54% 76.56% at 50.46% 100%,#FFF 0%,transparent 100%);
+        @apply content-[""] absolute left-0 opacity-30 translate-y-[30%] w-full h-full pointer-events-none
+    }
+}
+
+.btn-upgrade {
+    transition: background-size .2s cubic-bezier(.785,.135,.15,.86) 0s;
+    background-image: linear-gradient(to right, #9D28FA, #B220F8);
+    &:hover {
+        background-image: linear-gradient(to right, #8B30FD, #A227FB);
+    }
+}
