@@ -32,6 +32,9 @@ module.exports = {
       fontFamily: {
         sans: ["Axiforma"],
       },
+      height: {
+        "work-space-header": "40px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
