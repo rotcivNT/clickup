@@ -9,11 +9,11 @@ export default authMiddleware({
     }
     if (auth.userId && !auth.orgId && auth.isPublicRoute) {
       const redirectURL = new URL("/dashboard", req.url);
-      return NextResponse.redirect(redirectURL);
+      return NextResponse.redirect(redirectURL, 308);
     }
     if (auth.userId && auth.orgId && auth.isPublicRoute) {
       const redirectURL = new URL(`/workspace/${auth.orgId}`, req.url);
-      return NextResponse.redirect(redirectURL);
+      return NextResponse.redirect(redirectURL, 308);
     }
   },
 });

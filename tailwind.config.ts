@@ -26,6 +26,8 @@ module.exports = {
         0: "#292D34",
         3: "#E9EBF0",
       },
+      "primary-dark": "#30353C",
+      "drop-down": "#D5D6D7",
       white: "#FFFFFF",
     },
     extend: {
@@ -34,6 +36,7 @@ module.exports = {
       },
       height: {
         "work-space-header": "40px",
+        "work-space-content": "calc(100dvh - 40px)",
       },
       colors: {
         border: "hsl(var(--border))",

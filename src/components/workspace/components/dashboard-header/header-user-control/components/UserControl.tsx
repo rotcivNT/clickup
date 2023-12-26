@@ -19,6 +19,9 @@ import Image from "next/image";
 
 export default function UserControl() {
   const { user } = useUser();
+  if (!user) {
+    return null;
+  }
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -27,14 +30,14 @@ export default function UserControl() {
             className="rounded-[50%]"
             width={22}
             height={22}
-            src={user?.imageUrl || ""}
-            alt={user?.fullName || "User"}
+            src={user.imageUrl}
+            alt={user.fullName || ""}
           />
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className={cn(
-          "w-56 bg-[#30353C] text-sm text-[#D5D6D7] font-[300]",
+          "w-56 bg-[#30353C] text-sm text-drop-down font-[300]",
           BeVietnamese.className,
         )}
       >
