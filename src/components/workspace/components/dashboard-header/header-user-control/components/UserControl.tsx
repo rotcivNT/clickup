@@ -34,7 +34,7 @@ export default function UserControl() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className={cn(
-          "w-56 bg-[#30353C] text-sm text-[#D5D6D7] font-[300]",
+          "w-56 bg-[#30353C] text-sm text-drop-down font-[300]",
           BeVietnamese.className,
         )}
       >

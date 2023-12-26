@@ -2,6 +2,9 @@
 import { useUser } from "@clerk/nextjs";
 import DashboardHeader from "./components/dashboard-header/DashboardHeader";
 import { Be_Vietnam_Pro } from "next/font/google";
+import DashboardSidebar from "./components/dashboard-sidebar/DashboardSidebar";
+import DashboardMain from "./components/dashboard-main/DashboardMain";
+import MainTopBar from "./components/dashboard-main/MainTopBar";
 
 export const BeVietnamese = Be_Vietnam_Pro({
   weight: ["300", "400", "500", "600", "700"],
@@ -13,6 +16,13 @@ function Workspace() {
   return (
     <div className={BeVietnamese.className}>
       <DashboardHeader />
+      <main className="flex">
+        <DashboardSidebar />
+        <div className="flex-1 flex flex-col bg-[#2A2E34]">
+          <MainTopBar />
+          <DashboardMain />
+        </div>
+      </main>
     </div>
   );
 }

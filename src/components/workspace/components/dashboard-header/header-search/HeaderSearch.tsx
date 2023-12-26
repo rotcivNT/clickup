@@ -9,7 +9,7 @@ import "../styles.scss";
 
 export default function HeaderSearch() {
   return (
-    <div className="flex items-center gap-1 h-7">
+    <div className="flex items-center gap-2 h-7">
       <Command
         className={cn(
           "rounded-[6px] [&>div]:border-none [&>div]:h-full shadow-md h-7 bg-[rgba(255,255,255,0.1)]",
@@ -31,7 +31,7 @@ export default function HeaderSearch() {
               <Button
                 className={cn(
                   "h-full py-0 px-2 bg-[rgb(67,65,141)] hover:bg-[rgb(67,65,141)] gap-1 text-[rgba(255,255,255,0.8)]",
-                  "btn-ai relative",
+                  "btn-ai relative overflow-hidden",
                 )}
                 variant="destructive"
               >
