@@ -6,12 +6,17 @@ import { HelpCircle, UserRoundPlus } from "lucide-react";
 function SidebarFooter() {
   const { isOpenSidebar } = useBearStore();
   return (
-    <div className="sticky bottom-0 left-0 w-full transition duration-300">
+    <div className="w-full transition duration-300">
       <Separator className="bg-[#3C414A]" />
-      <div className="flex justify-between items-center px-5 py-[10px] overflow-hidden">
-        <div className={cn("flex items-center gap-[10px]", `${isOpenSidebar ? "w-0" : "w-auto"}`)}>
+      <div
+        className={cn(
+          "flex items-center px-5 py-[10px] overflow-hidden",
+          `${isOpenSidebar ? "justify-between" : "justify-start"}`,
+        )}
+      >
+        <div className={cn("flex items-center gap-[10px]", `${isOpenSidebar ? "w-auto" : "w-0"}`)}>
           <UserRoundPlus
-            className={`${isOpenSidebar ? "w-0" : "w-auto"}`}
+            className={`${isOpenSidebar ? "w-auto" : "w-0"}`}
             width={18}
             height={18}
             color="rgb(173,179,189)"

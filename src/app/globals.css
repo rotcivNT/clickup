@@ -62,6 +62,11 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+
+    --workspace-header: 40px;
+    --sidebar-small: 60px;
+    --sidebar-large: 255px;
+    --main-top-bar: 48px;
   }
  
   .dark {
@@ -104,9 +109,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased h-screen;
   }
   html {
     -webkit-tap-highlight-color: transparent;
+    @apply h-screen;
   }
 }

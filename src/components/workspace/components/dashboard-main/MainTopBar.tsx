@@ -1,16 +1,9 @@
 "use client";
 import { useAuth } from "@clerk/nextjs";
-import {
-  Anvil,
-  BookTextIcon,
-  Gauge,
-  HomeIcon,
-  InboxIcon,
-  PanelsTopLeft,
-  Radio,
-} from "lucide-react";
+import { Anvil, BookTextIcon, Gauge, HomeIcon, InboxIcon, Radio } from "lucide-react";
 import { usePathname } from "next/navigation";
 import ButtonCollapse from "./ButtonCollapse";
+import { useEffect, useRef } from "react";
 const commonIconStyle = {
   strokeWidth: 1.5,
   color: "rgb(173, 179, 189)",
@@ -62,7 +55,7 @@ function MainTopBar() {
     return null;
   }
   return (
-    <div className="flex p-2 pl-4 gap-4 items-center">
+    <div className="flex p-2 pl-4 gap-4 items-center bg-[#2A2E34] border-b border-[rgb(60,65,74)] z-10 sticky top-0 h-[var(--main-top-bar)]">
       <ButtonCollapse />
       <div className="flex gap-2 items-center">
         {currentPage.icon}

@@ -35,7 +35,7 @@ function SidebarHeader() {
             <p
               className={cn(
                 "text-[#F0F1F3] text-left font-medium",
-                `${isOpenSidebar ? "hidden" : "block min-w-[200px]"}`,
+                `${isOpenSidebar ? "block min-w-[200px]" : "hidden"}`,
               )}
             >
               {user.fullName}
@@ -43,7 +43,7 @@ function SidebarHeader() {
             <ChevronDown color="#F0F1F3" width={14} height={14} />
           </div>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="text-drop-down w-[255px]">
+        <DropdownMenuContent className="text-drop-down w-[var(--sidebar-large)]">
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>Profile</DropdownMenuItem>

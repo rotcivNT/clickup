@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 function DashboardHeader() {
   return (
-    <header className="flex h-work-space-header items-center bg-[#323452] px-5 gap-3">
+    <header className="flex h-work-space-header items-center bg-[#323452] px-5 gap-3 sticky top-0 z-[999]">
       <Link className="lg:flex-1" href="/">
         <Image alt="LOGO" src="/static/images/logo-no-word.svg" width={13} height={16} />
       </Link>

@@ -4,8 +4,8 @@ function Dashboard() {
   return (
     <div className="flex justify-center items-center h-screen">
       <OrganizationList
-        afterCreateOrganizationUrl="/workspace/:id"
-        afterSelectOrganizationUrl="/workspace/:id"
+        afterCreateOrganizationUrl="/workspace/:id/home"
+        afterSelectOrganizationUrl="/workspace/:id/home"
       />
     </div>
   );

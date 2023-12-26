@@ -22,6 +22,7 @@ module.exports = {
       },
     },
     colors: {
+      transparent: "transparent",
       grey: {
         0: "#292D34",
         3: "#E9EBF0",
@@ -35,8 +36,8 @@ module.exports = {
         sans: ["Axiforma"],
       },
       height: {
-        "work-space-header": "40px",
-        "work-space-content": "calc(100dvh - 40px)",
+        "work-space-header": "var(--workspace-header)",
+        "work-space-content": "calc(100dvh - var(--workspace-header))",
       },
       colors: {
         border: "hsl(var(--border))",
