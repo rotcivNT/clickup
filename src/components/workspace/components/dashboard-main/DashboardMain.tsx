@@ -1,7 +1,6 @@
-import MainTopBar from "./MainTopBar";
-
+"use client";
 function DashboardMain() {
-  return <div>S</div>;
+  return <div>HELLO 😘😉👌😒😍</div>;
 }
 
 export default DashboardMain;
