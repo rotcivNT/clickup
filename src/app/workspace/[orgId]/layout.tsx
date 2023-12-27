@@ -4,6 +4,7 @@ import MainTopBar from "@/components/workspace/components/dashboard-main/MainTop
 import DashboardSidebar from "@/components/workspace/components/dashboard-sidebar/DashboardSidebar";
 import { cn } from "@/lib/utils";
 import { Be_Vietnam_Pro } from "next/font/google";
+import Link from "next/link";
 
 export const BeVietnamese = Be_Vietnam_Pro({
   weight: ["300", "400", "500", "600", "700"],
@@ -14,6 +15,29 @@ export default function WorkspaceLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const data = [
+    {
+      title: "Home",
+    },
+    {
+      title: "Inbox",
+    },
+    {
+      title: "Docs",
+    },
+    {
+      title: "Dashboard",
+    },
+    {
+      title: "Whiteboard",
+    },
+    {
+      title: "Pulse",
+    },
+    {
+      title: "Goal",
+    },
+  ];
   return (
     <div className={BeVietnamese.className}>
       {/* <DashboardHeader />
@@ -26,6 +50,13 @@ export default function WorkspaceLayout({
         </div>
       </main> */}
       <DashboardHeader />
+      <div>
+        {data.map((item) => (
+          <Link href={`/workspace/org_2a0Clf7H1fpJ61KA8k3l7tKYWcO/${item.title.toLowerCase()}`}>
+            {item.title}
+          </Link>
+        ))}
+      </div>
       {children}
     </div>
   );
