@@ -1,4 +1,4 @@
-import { CreateOrganization, OrganizationList } from "@clerk/nextjs";
+import { OrganizationList } from "@clerk/nextjs";
 
 function Dashboard() {
   return (

@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { BeVietnamese } from "@/components/workspace/Workspace";
+import { BeVietnamese } from "@/app/workspace/[orgId]/layout";
 import { cn } from "@/lib/utils";
 import { GripIcon } from "lucide-react";
 

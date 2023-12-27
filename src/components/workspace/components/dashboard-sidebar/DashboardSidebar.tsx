@@ -1,3 +1,4 @@
+"use client";
 import { useBearStore } from "@/app/store/store";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";

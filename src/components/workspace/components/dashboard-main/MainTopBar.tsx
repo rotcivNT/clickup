@@ -3,7 +3,6 @@ import { useAuth } from "@clerk/nextjs";
 import { Anvil, BookTextIcon, Gauge, HomeIcon, InboxIcon, Radio } from "lucide-react";
 import { usePathname } from "next/navigation";
 import ButtonCollapse from "./ButtonCollapse";
-import { useEffect, useRef } from "react";
 const commonIconStyle = {
   strokeWidth: 1.5,
   color: "rgb(173, 179, 189)",

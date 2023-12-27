@@ -12,7 +12,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { BeVietnamese } from "@/components/workspace/Workspace";
+import { BeVietnamese } from "@/app/workspace/[orgId]/layout";
 import { cn } from "@/lib/utils";
 import { useUser } from "@clerk/nextjs";
 import Image from "next/image";
