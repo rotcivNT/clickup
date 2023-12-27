@@ -16,16 +16,16 @@ export default function WorkspaceLayout({
 }) {
   return (
     <div className={BeVietnamese.className}>
-      <DashboardHeader />
+      {/* <DashboardHeader />
       <main className={cn("flex")}>
         <DashboardSidebar />
         <div className="flex-1 flex flex-col bg-[#2A2E34] relative">
           <MainTopBar />
           <DashboardMain>{children}</DashboardMain>
-          {/* Linear gradient bg */}
           <div className="bg-work-linear" />
         </div>
-      </main>
+      </main> */}
+      {children}
     </div>
   );
 }
