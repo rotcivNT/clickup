@@ -25,6 +25,7 @@ export default function WorkspaceLayout({
           <div className="bg-work-linear" />
         </div>
       </main> */}
+      <DashboardHeader />
       {children}
     </div>
   );
