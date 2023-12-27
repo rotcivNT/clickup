@@ -9,6 +9,7 @@ export const BeVietnamese = Be_Vietnam_Pro({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["vietnamese"],
 });
+export const runtime = "edge";
 export default function WorkspaceLayout({
   children,
 }: {
