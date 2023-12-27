@@ -8,10 +8,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { BeVietnamese } from "@/app/workspace/[orgId]/layout";
 import { cn } from "@/lib/utils";
 import { GripIcon } from "lucide-react";
+import { Be_Vietnam_Pro } from "next/font/google";
 
+const BeVietnamese = Be_Vietnam_Pro({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["vietnamese"],
+});
 function QuickActionMenu() {
   return (
     <DropdownMenu>

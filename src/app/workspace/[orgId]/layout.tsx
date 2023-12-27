@@ -5,11 +5,11 @@ import DashboardSidebar from "@/components/workspace/components/dashboard-sideba
 import { cn } from "@/lib/utils";
 import { Be_Vietnam_Pro } from "next/font/google";
 
-export const BeVietnamese = Be_Vietnam_Pro({
+export const runtime = "edge";
+const BeVietnamese = Be_Vietnam_Pro({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["vietnamese"],
 });
-export const runtime = "edge";
 export default function WorkspaceLayout({
   children,
 }: {
