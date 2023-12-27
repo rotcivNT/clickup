@@ -12,11 +12,15 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { BeVietnamese } from "@/components/workspace/Workspace";
 import { cn } from "@/lib/utils";
 import { useUser } from "@clerk/nextjs";
 import Image from "next/image";
+import { Be_Vietnam_Pro } from "next/font/google";
 
+const BeVietnamese = Be_Vietnam_Pro({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["vietnamese"],
+});
 export default function UserControl() {
   const { user } = useUser();
   if (!user) {

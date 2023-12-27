@@ -12,7 +12,7 @@ export default authMiddleware({
       return NextResponse.redirect(redirectURL, 308);
     }
     if (auth.userId && auth.orgId && auth.isPublicRoute) {
-      const redirectURL = new URL(`/workspace/${auth.orgId}`, req.url);
+      const redirectURL = new URL(`/workspace/${auth.orgId}/home`, req.url);
       return NextResponse.redirect(redirectURL, 308);
     }
   },

@@ -6,20 +6,11 @@ interface BearState {
   setIsOpenSidebar: () => void;
 }
 
-export const useBearStore = create<BearState>()(
-  devtools(
-    persist(
-      (set) => ({
-        isOpenSidebar: true,
-        setIsOpenSidebar: () =>
-          set((prevState) => ({
-            ...prevState,
-            isOpenSidebar: !prevState.isOpenSidebar,
-          })),
-      }),
-      {
-        name: "bear-storage",
-      }
-    )
-  )
-);
+export const useBearStore = create<BearState>()((set) => ({
+  isOpenSidebar: true,
+  setIsOpenSidebar: () =>
+    set((prevState) => ({
+      ...prevState,
+      isOpenSidebar: !prevState.isOpenSidebar,
+    })),
+}));

@@ -1,11 +1,12 @@
 .bg-work-linear {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     background-image: url('../../../public/static/images/workspace-bg-linear.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: top right;
     pointer-events: none;
 }
